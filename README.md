@@ -54,3 +54,105 @@ Para utilizar MongoDB con PHP, necesitas instalar el controlador adecuado. El co
    
    ```bash
    pecl install mongodb
+
+---
+
+## Paquetes para usar MongoDB en php
+
+Extensión oficial mongodb (moderna y recomendada) 
+
+Proporciona acceso de bajo nivel a MongoDB. 
+
+Sustituye a la extensión obsoleta mongo. 
+
+ 
+
+Comando instalación: sudo pecl install mongodb 
+
+ 
+
+Doctrine MongoDB ODM 
+
+Ofrece un ODM (Object-Document Mapper) para trabajar con documentos en MongoDB como si fueran entidades PHP. 
+
+Requiere configuración avanzada. 
+
+ 
+
+Comando instalación: composer require doctrine/mongodb-odm 
+
+ 
+
+Jenssegers MongoDB para Laravel 
+
+Un paquete que integra MongoDB con el framework Laravel. 
+
+Extiende Eloquent para permitir consultas y operaciones en bases de datos MongoDB. 
+
+ 
+
+Comando instalación: composer require jenssegers/mongodb 
+
+ 
+
+ 
+
+PHPMongo ODM 
+
+Un Object-Document Mapper (ODM) minimalista para MongoDB en PHP. 
+
+No es tan robusto ni activo como Doctrine ODM. 
+
+ 
+
+ 
+
+Mandango 
+
+Un ODM alternativo para MongoDB en PHP. 
+
+Útil para proyectos más antiguos o específicos. 
+
+ 
+
+ 
+
+Alcaeus MongoDB Adapter 
+
+Una capa de compatibilidad que permite usar la API de la antigua extensión mongo con la extensión moderna mongodb. 
+
+Útil para proyectos de migración. 
+
+ 
+
+Comando instalación: composer require alcaeus/mongo-php-adapter 
+
+ 
+
+Laravel MongoDB Passport 
+
+Amplía la funcionalidad del paquete de Jenssegers para usar Passport con bases de datos MongoDB. 
+
+ 
+
+Comando instalación: composer require oscarafdev/mongodb-passport 
+
+ 
+
+ 
+
+Simple ODM 
+
+Un ODM ligero para MongoDB en PHP. 
+
+Enfocado en la simplicidad. 
+
+ 
+
+ 
+
+Monga 
+
+Un wrapper ligero para trabajar con MongoDB. 
+
+Proporciona un enfoque minimalista en comparación con otras herramientas. 
