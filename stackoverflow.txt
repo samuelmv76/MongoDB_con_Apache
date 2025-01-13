@@ -5,3 +5,9 @@ En la siguiente página están los pasos. El composer para poder usar los paquet
 con MongoDB.
 https://eleternoaprendizsite.wordpress.com/2017/05/16/primera-entrada-del-blog/ 
 todos los pasos en este ultimo
+
+Ha habido modificaciones. El manual de instalación lo va a hacer Ian Fuentes Bastida y 
+la presentación la va a hacer Marina González Gutiérrez. El reparto de tareas se ha modificado:
+ Primer punto-> Pablo Suárez Sánchez, Segundo punto-> Ian Fuentes Bastida, Tercer punto-> Samuel Martos Vidal,
+  Cuarto punto: Ian Fuentes Bastida. Y hemos añadido dos puntos nuevos: Quinto punto: Instalando la librería de 
+  MongoDB que la va a hacer Marina González Gutiérez y un Sexto punto: Pablo Suárez Sánchez.
