@@ -1,5 +1,6 @@
 <?php
-// Para comprobar la version: phpinfo();
+// Para comprobar la version: 
+phpinfo();
 
 if(extension_loaded('mongodb')){
     echo "La extensión MongoDB está cargada.";
