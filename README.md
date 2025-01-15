@@ -196,3 +196,48 @@ composer require mongodb/mongodb
 Esto instalará la última versión del driver de MongoDB, y se podrá utilizar en tu aplicación PHP.
 
 En resumen, los paquetes de MongoDB para PHP permiten a los desarrolladores interactuar eficientemente con MongoDB, aprovechando sus características de escalabilidad y flexibilidad, mientras se integran fácilmente en aplicaciones PHP.
+-------------------------------------------------------
+-------------------------------------------------------
+
+Ejemplo de JSON
+json
+Copiar código
+{
+  "nombre": "Juan",
+  "edad": 30,
+  "esEmpleado": true,
+  "hobbies": ["leer", "correr", "programar"],
+  "direccion": {
+    "calle": "Calle Falsa",
+    "numero": 123,
+    "ciudad": "Madrid",
+    "codigoPostal": "28013"
+  }
+}
+Ejemplo de BSON
+El BSON (Binary JSON) no se puede mostrar directamente como un archivo de texto porque es una representación binaria. Sin embargo, su estructura sería equivalente al JSON anterior. Así se vería su contenido conceptual:
+
+arduino
+Copiar código
+\x16\x00\x00\x00                      // tamaño del documento en bytes
+\x02nombre\x00\x05\x00\x00\x00Juan\x00 // campo "nombre" con tipo cadena
+\x10edad\x00\x1E\x00\x00\x00          // campo "edad" con tipo entero
+\x08esEmpleado\x00\x01                // campo "esEmpleado" con tipo booleano
+\x04hobbies\x00                       // campo "hobbies" con tipo array
+  \x2F\x00\x00\x00                    // tamaño del array en bytes
+  \x02\x30\x00\x05\x00\x00\x00leer\x00 // elemento 0
+  \x02\x31\x00\x06\x00\x00\x00correr\x00 // elemento 1
+  \x02\x32\x00\x0A\x00\x00\x00programar\x00 // elemento 2
+  \x00                                // fin del array
+\x03direccion\x00                     // subdocumento "direccion"
+  \x28\x00\x00\x00                    // tamaño del subdocumento
+  \x02calle\x00\x0B\x00\x00\x00Calle Falsa\x00
+  \x10numero\x00\x7B\x00\x00\x00      // número 123
+  \x02ciudad\x00\x06\x00\x00\x00Madrid\x00
+  \x02codigoPostal\x00\x06\x00\x00\x0028013\x00
+  \x00                                // fin del subdocumento
+\x00                                  // fin del documento
+Diferencias clave:
+JSON es un formato basado en texto, fácil de leer y escribir.
+BSON es un formato binario, más eficiente para almacenamiento y transmisión, pero no legible directamente por humanos.
+BSON incluye información de longitud y tipos explícitos, lo que lo hace más rápido para ciertas operaciones.
